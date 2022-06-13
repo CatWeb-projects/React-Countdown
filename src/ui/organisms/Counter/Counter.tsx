@@ -6,14 +6,12 @@ import './Counter.scss';
 
 export const Counter = () => {
   const {
-    timeValue,
     seconds,
     setSeconds,
     minutes,
     setMinutes,
     counting,
     setCounting,
-    onTimerClick,
     onPause,
     saveTime
   } = React.useContext(TimerContext);

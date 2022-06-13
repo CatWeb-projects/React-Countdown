@@ -5,14 +5,8 @@ import { Button } from '../../atoms';
 import './AddTime.scss';
 
 export const AddTime = () => {
-  const {
-    timeValue,
-    setTimeValue,
-    minutes,
-    setMinutes,
-    setCounting,
-    onTimerClick
-  } = React.useContext(TimerContext);
+  const { timeValue, setTimeValue, onTimerClick } =
+    React.useContext(TimerContext);
 
   const onTimeChange = (e: { target: { value: string } }) => {
     setTimeValue(e.target.value);
